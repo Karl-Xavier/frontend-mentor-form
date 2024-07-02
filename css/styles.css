@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+#form{
+    width: 400px;
+    max-width: 400px;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+#form h2{
+    margin-bottom: 10px;
+}
+
+#form .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form .form-container .input{
+    width: 100%;
+    height: 48px;
+    outline: none;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+#form .form-container .names{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+#form .form-container .names .in{
+    flex: 1;
+}
+
+#form .form-container .names .inp{
+    flex: 1;
+}
+
+#form .form-container .input::placeholder{
+    font-style: italic;
+}
+
+#form .form-container .querybox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    gap: 20px;
+}
+
+#form .form-container .querybox label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#form .form-container .querybox label input[type='radio']{
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(0, 81, 255)
+}
+
+#form .form-container textarea{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#form .form-container .checkbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#form .form-container .checkbox input[type='checkbox']{
+    width: 22px;
+    height: 22px;
+    accent-color: rgb(0, 81, 255);
+    cursor: pointer;
+}
+
+#form .form-container button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#form .form-container button:hover{
+    background-color: rgb(16, 60, 156);
+    transition: .5s;
+}
+
+@media screen and (max-width: 480px){
+    #form{
+        max-width: 300px;
+        height: 600px;
+    }
+
+    #form .form-container .names{
+        flex-direction: column;
+    }
+
+    #form .form-container .names .in{
+        width: 100%;
+    }
+    #form .form-container .names .inp{
+        width: 100%;
+    }
+
+    #form .form-container .querybox label{
+        font-size: 15px;
+    }
+}

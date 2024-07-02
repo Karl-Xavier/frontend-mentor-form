@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor || Contact form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <form id="form">
+    <h2>Contact Us</h2>
+    <div class="form-container">
+      <div class="names">
+        <input class="input in" type="text" placeholder="First Name" required>
+        <input class="input inp" type="text" placeholder="Last Name" required>
+      </div>
+      <input class="input email" type="email" placeholder="Email" required>
+        <div class="querybox">
+          <label for="general">
+            <input type="radio" class="radio" name="radio" required>
+            <span>General Enquiry</span>
+          </label>
+          <label for="support">
+            <input type="radio" class="radio" name="radio" required>
+            <span>Support Request</span>
+          </label>
+        </div>
+        <textarea class="textA" id="" cols="30" rows="5" placeholder="Write Something..."></textarea>
+      <label class="checkbox" for="check">
+        <input type="checkbox" class="check" id="">
+        <span>I consent to being contacted by the team</span>
+      </label>
+      <button type="submit" id="button">Submit</button>
+    </div>
+  </form>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Emeka Bruno</a>.
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
